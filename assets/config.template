@@ -4,8 +4,8 @@ module.exports = {
 		user: 'TO COMPLETE',
 		password: 'TO_COMPLETE',
 		database: 'TO_COMPLETE',
-		schemaFile: 'assets/insights_table.sql',
-		table: 'TO_COMPLETE'
+		table: 'insights',
+		schemaFile: 'assets/insights_table.sql'
 	},
 	userAccessToken: 'TO_COMPLETE'
 };
