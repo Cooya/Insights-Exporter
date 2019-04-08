@@ -1,0 +1,25 @@
+{
+  "name": "insights-exporter",
+  "version": "1.0.0",
+  "description": "Save Facebook page insights into database",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "set-up-database": "node set_up_database.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cooya/Insights-Exporter.git"
+  },
+  "author": "Coya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cooya/Insights-Exporter/issues"
+  },
+  "homepage": "https://github.com/Cooya/Insights-Exporter#readme"
+}

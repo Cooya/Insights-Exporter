@@ -1,0 +1,140 @@
+{
+	"data": [
+		{
+			"name": "page_actions_post_reactions_like_total",
+			"period": "day",
+			"values": [
+				{ "value": 0, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 0, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Daily total post like reactions of a page.",
+			"description": "Daily: total post like reactions of a page.",
+			"id": "323730775702/insights/page_actions_post_reactions_like_total/day"
+		},
+		{
+			"name": "page_impressions",
+			"period": "day",
+			"values": [
+				{ "value": 4, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 15, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Daily Total Impressions",
+			"description": "Daily: The number of times any content from your Page or about your Page entered a person's screen. This includes posts, check-ins, ads, social information from people who interact with your Page and more. (Total Count)",
+			"id": "323730775702/insights/page_impressions/day"
+		},
+		{
+			"name": "page_consumptions",
+			"period": "day",
+			"values": [
+				{ "value": 0, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 2, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Daily Page Consumptions",
+			"description": "Daily: The number of clicks on any of your content. Stories generated without clicks on page content (e.g., liking the page in Timeline) are not included. (Total Count)",
+			"id": "323730775702/insights/page_consumptions/day"
+		},
+		{
+			"name": "page_engaged_users",
+			"period": "day",
+			"values": [
+				{ "value": 0, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 1, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Daily Page Engaged Users",
+			"description": "Daily: The number of people who engaged with your Page. Engagement includes any click or story created. (Unique Users)",
+			"id": "323730775702/insights/page_engaged_users/day"
+		},
+		{
+			"name": "page_actions_post_reactions_like_total",
+			"period": "week",
+			"values": [
+				{ "value": 2, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 1, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Weekly total post like reactions of a page.",
+			"description": "Weekly: total post like reactions of a page.",
+			"id": "323730775702/insights/page_actions_post_reactions_like_total/week"
+		},
+		{
+			"name": "page_impressions",
+			"period": "week",
+			"values": [
+				{ "value": 218, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 166, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Weekly Total Impressions",
+			"description": "Weekly: The number of times any content from your Page or about your Page entered a person's screen. This includes posts, check-ins, ads, social information from people who interact with your Page and more. (Total Count)",
+			"id": "323730775702/insights/page_impressions/week"
+		},
+		{
+			"name": "page_consumptions",
+			"period": "week",
+			"values": [
+				{ "value": 1, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 2, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Weekly Page Consumptions",
+			"description": "Weekly: The number of clicks on any of your content. Stories generated without clicks on page content (e.g., liking the page in Timeline) are not included. (Total Count)",
+			"id": "323730775702/insights/page_consumptions/week"
+		},
+		{
+			"name": "page_engaged_users",
+			"period": "week",
+			"values": [
+				{ "value": 4, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 2, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "Weekly Page Engaged Users",
+			"description": "Weekly: The number of people who engaged with your Page. Engagement includes any click or story created. (Unique Users)",
+			"id": "323730775702/insights/page_engaged_users/week"
+		},
+		{
+			"name": "page_actions_post_reactions_like_total",
+			"period": "days_28",
+			"values": [
+				{ "value": 84, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 78, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "28 Days total post like reactions of a page.",
+			"description": "28 Days: total post like reactions of a page.",
+			"id": "323730775702/insights/page_actions_post_reactions_like_total/days_28"
+		},
+		{
+			"name": "page_impressions",
+			"period": "days_28",
+			"values": [
+				{ "value": 7772, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 7316, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "28 Days Total Impressions",
+			"description": "28 Days: The number of times any content from your Page or about your Page entered a person's screen. This includes posts, check-ins, ads, social information from people who interact with your Page and more. (Total Count)",
+			"id": "323730775702/insights/page_impressions/days_28"
+		},
+		{
+			"name": "page_consumptions",
+			"period": "days_28",
+			"values": [
+				{ "value": 352, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 326, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "28 Days Page Consumptions",
+			"description": "28 Days: The number of clicks on any of your content. Stories generated without clicks on page content (e.g., liking the page in Timeline) are not included. (Total Count)",
+			"id": "323730775702/insights/page_consumptions/days_28"
+		},
+		{
+			"name": "page_engaged_users",
+			"period": "days_28",
+			"values": [
+				{ "value": 202, "end_time": "2019-04-05T07:00:00+0000" },
+				{ "value": 196, "end_time": "2019-04-06T07:00:00+0000" }
+			],
+			"title": "28 Days Page Engaged Users",
+			"description": "28 Days: The number of people who engaged with your Page. Engagement includes any click or story created. (Unique Users)",
+			"id": "323730775702/insights/page_engaged_users/days_28"
+		}
+	],
+	"paging": {
+		"previous": "https://graph.facebook.com/v3.2/323730775702/insights?access_token=EAAEZAykjYZBXQBACj2poPuXEeICYIOqkFoTFPwHb05e6tRO5cowPnRpv35KXZAVP9G2B6QK9gtSZAQn1OhmroELWTvdlGTiQwTgXKloc0rZA2LO2he3ZBbImZA8Lgo4vpYvDf69kOt072Uypfnhhj8vZBdfPg0feiocabiZBjmQ9C9QZDZD&metric\u00255B0\u00255D=page_actions_post_reactions_like_total&metric\u00255B1\u00255D=page_impressions&metric\u00255B2\u00255D=page_consumptions&metric\u00255B3\u00255D=page_engaged_users&since=1554188400&until=1554361200",
+		"next": "https://graph.facebook.com/v3.2/323730775702/insights?access_token=EAAEZAykjYZBXQBACj2poPuXEeICYIOqkFoTFPwHb05e6tRO5cowPnRpv35KXZAVP9G2B6QK9gtSZAQn1OhmroELWTvdlGTiQwTgXKloc0rZA2LO2he3ZBbImZA8Lgo4vpYvDf69kOt072Uypfnhhj8vZBdfPg0feiocabiZBjmQ9C9QZDZD&metric\u00255B0\u00255D=page_actions_post_reactions_like_total&metric\u00255B1\u00255D=page_impressions&metric\u00255B2\u00255D=page_consumptions&metric\u00255B3\u00255D=page_engaged_users&since=1554534000&until=1554706800"
+	}
+}
