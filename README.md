@@ -6,7 +6,7 @@ Save Facebook page insights into database
 git clone https://github.com/Cooya/Insights-Exporter.git
 cd Insights-Exporter
 npm install
-touch config.js // and fill out the needed fields
+cp assets/config.template config.js // and fill out the needed fields
 node set_up_database.js --create-db --create-table
 npm start
 ```
