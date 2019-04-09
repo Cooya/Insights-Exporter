@@ -11,7 +11,7 @@ const readFile = util.promisify(fs.readFile);
 	for(let i = 1; i < args.length; ++i) {
 		if(args[i] == '--drop-db')
 			actions.dropDatabase = true;
-		if(args[i] == '--create-db')
+		if(args[i] == '--create-db' || args[i] == '--create-database')
 			actions.createDatabase = true;
 		if(args[i] == '--create-table')
 			actions.createTable = true;
