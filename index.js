@@ -1,9 +1,11 @@
 const request = require('request-promise');
+const querystring = require('querystring');
 
 const config = require('./config');
 const DatabaseConnection = require('./DatabaseConnection')
 
-const apiUrlPrefix = 'https://graph.facebook.com/v3.2';
+const apiUrlPrefix = 'https://graph.facebook.com/v3.3';
+const accountsQueryLimit = 100;
 const requiredMetrics = [
 	'page_actions_post_reactions_like_total',
 	'page_impressions',
@@ -16,17 +18,20 @@ async function main() {
 	await databaseConnection.connect();
 
 	console.log('Getting list of accounts...');
-	let res = await request.get(apiUrlPrefix + '/me/accounts', {
-		qs: {
-			access_token: config.userAccessToken,
-			limit: 1000
-		}
-	});
+	const results = [];
+	let nextPage = apiUrlPrefix + '/me/accounts?' + querystring.encode({ access_token: config.userAccessToken, limit: accountsQueryLimit });
+	while(nextPage) {
+		let res = await request.get(nextPage);
+		console.log('Parsing reponse data...');
+		const json = JSON.parse(res);
+		results.push(...json.data);
 
-	console.log('Processing accounts...');
-	const json = JSON.parse(res);
+		nextPage = json.paging && json.paging.next ? json.paging.next : null;
+	}
+
+	console.log(`${results.length} entries to process.`);
 	let item;
-	for(let entry of json.data) {
+	for(let entry of results) {
 		try {
 			res = await request.get(apiUrlPrefix + '/' + entry.id + '/insights', {
 				qs: {
@@ -37,7 +42,7 @@ async function main() {
 				}
 			});
 			res = JSON.parse(res);
-			//console.debug(JSON.stringify(res, null, '  '));
+			// console.debug(JSON.stringify(res, null, '  '));
 			
 			item = {
 				date: new Date(),
@@ -47,7 +52,7 @@ async function main() {
 			for(let metric of res.data)
 				item[metric.name] = metric.values[0].value;
 
-			//console.debug(item);
+			// console.debug(item);
 			await databaseConnection.insertItem(item, 'page_name'); 
 		} catch(e) {
 			if(e.code == 'ER_DUP_ENTRY') console.warn('Account "%s" already processed today.', entry.name);
